@@ -12,14 +12,16 @@
 
 body {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     /* Generic Project Styles */
     color: #3a3a3a;
-    font-family: 'lato' , sans-serif;
+    font-family: 'lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,8 +43,8 @@ header {
 }
 
 header a {
-     text-decoration: none;
-     color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -50,9 +52,9 @@ header a {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-} 
+}
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -64,7 +66,7 @@ header a {
 nav {
     position: absolute;
     background-color: #ffffff;
-    width:100%;
+    width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
@@ -87,10 +89,14 @@ nav {
 
 /* main content */
 main {
-    
+
     /* Make Main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+#benefits p {
+    padding: 0 20px;
 }
 
 /* hero section */
@@ -110,11 +116,12 @@ main {
     width: 80%;
     min-height: 200px;
     padding-top: 40px;
-    padding-left:10px;
+    padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
-    color:#ffffff;
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff;
 }
 
 /* footer */
@@ -129,12 +136,40 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a
+    color: #3a3a3a
+}
+
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+section #reasons {
+    width: 90%;
+}
+
+#circle-cover-bg {
+    background: url('../images/Circular\ pic.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square picture into a cirlce */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 
 }
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Media query: Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -150,7 +185,7 @@ main {
 
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -176,31 +211,26 @@ main {
         right: 50px;
     }
 
-    /* Reasons section */
-    #reasons {
-        width: 90%;
-        margin: 20px auto;
-    }
-
     #reasons h2 {
         margin-bottom: 20px;
         text-align: center;
         font-size: 280%;
     }
 
-    #benefits-physical > div, #benefits-mental > div {
+    #benefits-physical>div,
+    #benefits-mental>div {
         line-height: 20px;
         margin-bottom: 20px;
     }
-    
-    #benefits p {
-        padding: 0 20px;
-    }
+
+
 
     hr {
         border-top: 1px solid #3a3a3a;
         margin: 5px 0;
     }
+
+    
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -208,3 +238,4 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
